@@ -1,0 +1,60 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Clean Solid Green Metro Train Logo (scaled down slightly for ideal adaptive icon margins) -->
+    <!-- Centered around (54, 54) with ~22% margin padding -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.78"
+        android:scaleY="0.78">
+
+        <!-- Train Outer Body -->
+        <path
+            android:fillColor="#0A7A3B"
+            android:pathData="M38,26 h32 c5.5,0 10,4.5 10,10 v30 c0,4 -3,7 -7,7 h-38 c-4,0 -7,-3 -7,-7 v-30 c0,-5.5 4.5,-10 10,-10 z"/>
+
+        <!-- Windshield cutout (White) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M40,33 h28 c2,0 3.5,1.5 3.5,3.5 v14 c0,2 -1.5,3.5 -3.5,3.5 h-28 c-2,0 -3.5,-1.5 -3.5,-3.5 v-14 c0,-2 1.5,-3.5 3.5,-3.5 z"/>
+
+        <!-- Headlight Left (White) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M43,62 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+
+        <!-- Headlight Right (White) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M59,62 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+
+        <!-- Center Line / Bar (White) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M50,61 h8 v2 h-8 z"/>
+
+        <!-- Left Leg Track -->
+        <path
+            android:strokeColor="#0A7A3B"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M42,73 L37,81"/>
+
+        <!-- Right Leg Track -->
+        <path
+            android:strokeColor="#0A7A3B"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M66,73 L71,81"/>
+
+        <!-- Bottom Rail -->
+        <path
+            android:strokeColor="#0A7A3B"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M32,83 L76,83"/>
+    </group>
+</vector>
