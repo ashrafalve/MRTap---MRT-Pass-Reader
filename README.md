@@ -1,16 +1,30 @@
-# mrtap
+# MRTap — MRT Pass Reader
 
-A new Flutter project.
+An offline NFC card reader and fare companion for **Dhaka Metro Rail MRT Pass** and **Rapid Pass** cards, built with Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚇 Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Instant Auto-Scan (Tap & Read):** Simply hold your MRT Pass or Rapid Pass against the back of your phone — scans automatically without pressing any button.
+- **Accurate Real-Time Balance:** Reads card balance in whole Taka (`৳`).
+- **Trip & Recharge History:** Shows past journeys, boarding/alighting stations, fares, and top-up recharges.
+- **Offline Fare Calculator:** Instant fare chart between all MRT Line-6 stations with pass discounts.
+- **100% Offline & Private:** Zero internet requests. No tracking, accounts, or analytics.
+- **Bilingual & Dark Mode:** English and Bangla (বাংলা) with system, light, and dark modes.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Supported Cards
+
+- **MRT Pass** (DMTCL)
+- **Rapid Pass** (DTCA)
+- *Technology:* Sony FeliCa (ISO/IEC 18092)
+
+---
+
+## ⚖️ Disclaimer
+
+**MRTap is an independent, unofficial open-source application.** It is not affiliated with, endorsed by, or operated by Dhaka Mass Transit Company Limited (DMTCL) or Dhaka Transport Coordination Authority (DTCA).
+
+
