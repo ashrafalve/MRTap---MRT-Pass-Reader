@@ -9,7 +9,6 @@ import 'package:mrtap/data/models/models.dart';
 import 'package:mrtap/data/repositories/library_repository.dart';
 import 'package:mrtap/nfc/felica/felica_reader.dart';
 import 'package:mrtap/nfc/nfc_service.dart';
-import 'package:mrtap/widgets/animated_shapes.dart';
 import 'package:mrtap/widgets/common.dart';
 import 'package:mrtap/widgets/transaction_tile.dart';
 
@@ -206,18 +205,36 @@ class _ScanningView extends StatelessWidget {
         AnimatedBuilder(
           animation: pulse,
           builder: (BuildContext context, Widget? child) {
+            final double t = pulse.value;
             return SizedBox(
-              width: 220,
-              height: 220,
+              width: 240,
+              height: 240,
               child: Stack(
                 alignment: Alignment.center,
                 children: <Widget>[
-                  AnimatedSolidRadarRings(
-                    progress: pulse.value,
-                    color: theme.colorScheme.primary,
-                    size: 220,
-                    strokeWidth: 2.2,
+                  // Outer soft expanding wave
+                  Container(
+                    width: 140 + 80 * t,
+                    height: 140 + 80 * t,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: theme.colorScheme.primary.withValues(
+                        alpha: (0.16 * (1.0 - t * 0.5)).clamp(0.0, 1.0),
+                      ),
+                    ),
                   ),
+                  // Middle pulse ring
+                  Container(
+                    width: 120 + 45 * t,
+                    height: 120 + 45 * t,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: theme.colorScheme.primary.withValues(
+                        alpha: (0.22 * (1.0 - t * 0.3)).clamp(0.0, 1.0),
+                      ),
+                    ),
+                  ),
+                  // Center solid circle with NFC icon
                   Container(
                     width: 110,
                     height: 110,
@@ -227,7 +244,7 @@ class _ScanningView extends StatelessWidget {
                     ),
                     child: Icon(
                       Icons.nfc,
-                      size: 54,
+                      size: 52,
                       color: theme.colorScheme.onPrimaryContainer,
                     ),
                   ),

@@ -1,4 +1,4 @@
-package com.example.mrtap
+package com.ashrafalve.mrtap
 
 import io.flutter.embedding.android.FlutterActivity
 
