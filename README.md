@@ -27,4 +27,10 @@ An offline NFC card reader and fare companion for **Dhaka Metro Rail MRT Pass** 
 
 **MRTap is an independent, unofficial open-source application.** It is not affiliated with, endorsed by, or operated by Dhaka Mass Transit Company Limited (DMTCL) or Dhaka Transport Coordination Authority (DTCA).
 
+---
+
+## 🔒 Privacy Policy
+
+MRTap respects your privacy and collects zero personal data. Read our full [Privacy Policy](PRIVACY_POLICY.md).
+
 
